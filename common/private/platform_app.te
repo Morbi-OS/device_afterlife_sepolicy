@@ -9,3 +9,6 @@ hal_client_domain(platform_app, hal_lineage_livedisplay)
 
 # Allow PowerShare HAL service to be found
 hal_client_domain(platform_app, hal_lineage_powershare)
+
+# Launcher apps read pm.archiving.enabled
+get_prop(platform_app, pm_archiving_enabled_prop)
