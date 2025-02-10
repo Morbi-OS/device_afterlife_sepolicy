@@ -11,6 +11,14 @@ ro.vendor.audio.dolby.dax.support      u:object_r:exported_system_prop:s0
 ro.vendor.audio.dolby.dax.version      u:object_r:exported_system_prop:s0
 ro.vendor.audio.dolby.surround.enable  u:object_r:exported_system_prop:s0
 
+# Custom version
+ro.afterlife.build.version                u:object_r:custom_version_prop:s0
+ro.afterlife.device                       u:object_r:custom_version_prop:s0
+ro.afterlife.display.version              u:object_r:custom_version_prop:s0
+ro.afterlife.fingerprint                  u:object_r:custom_version_prop:s0
+ro.afterlife.releasetype                  u:object_r:custom_version_prop:s0
+ro.afterlife.version                      u:object_r:custom_version_prop:s0
+
 # PIHooks
 persist.sys.pihooks.disable.            u:object_r:pih_disable_prop:s0
 
