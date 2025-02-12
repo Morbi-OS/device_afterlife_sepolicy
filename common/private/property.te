@@ -1,2 +1,6 @@
+# ATV
+# used by mediashell
+product_internal_prop(odm_cast_prop)
+
 # Recovery update
 system_internal_prop(recovery_update_prop)
