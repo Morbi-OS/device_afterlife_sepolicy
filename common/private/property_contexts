@@ -19,6 +19,9 @@ ro.recovery.batteryless                u:object_r:recovery_config_prop:s0 exact 
 # Recovery filesystem
 ro.recovery.supported_fs               u:object_r:recovery_config_prop:s0 exact string
 
+# Recovery input
+ro.minui.blacklist_input_devices       u:object_r:recovery_config_prop:s0
+
 # Recovery touch
 ro.minui.default_touch_rotation        u:object_r:recovery_config_prop:s0
 
