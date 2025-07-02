@@ -1,6 +1,6 @@
 #
 # This policy configuration will be used by all products that
-# inherit from Lineage
+# inherit from Afterlife
 #
 
 ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
@@ -10,26 +10,26 @@ endif
 endif
 
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
-    device/lineage/sepolicy/common/public
+    device/afterlife/sepolicy/common/public
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/lineage/sepolicy/common/private
+    device/afterlife/sepolicy/common/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/lineage/sepolicy/common/dynamic \
-    device/lineage/sepolicy/common/system \
+    device/afterlife/sepolicy/common/dynamic \
+    device/afterlife/sepolicy/common/system \
     hardware/google/pixel-sepolicy/flipendo \
     hardware/google/pixel-sepolicy/turbo_adapter
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/lineage/sepolicy/common/dynamic \
-    device/lineage/sepolicy/common/vendor \
+    device/afterlife/sepolicy/common/dynamic \
+    device/afterlife/sepolicy/common/vendor \
     hardware/google/pixel-sepolicy/flipendo \
     hardware/google/pixel-sepolicy/turbo_adapter
 endif
 
 # Include atv rules on atv product
 ifeq ($(PRODUCT_IS_ATV), true)
-include device/lineage/sepolicy/atv/sepolicy.mk
+include device/afterlife/sepolicy/atv/sepolicy.mk
 endif
